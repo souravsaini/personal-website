@@ -1,0 +1,68 @@
+/* rem and em do not work in media queries. So 1rem = 16px */
+
+@media (max-width: 65em) {
+  html {
+    /* 9px / 16px  */
+    font-size: 56.25%;
+  }
+
+  .menu {
+    gap: 4rem;
+  }
+
+  .hero-text1 {
+    font-size: 2rem;
+  }
+
+  .hero-text2 {
+    font-size: 6.2rem;
+    font-weight: 600;
+  }
+
+  .hero-text3 {
+    font-size: 3rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .cta {
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  .cta-text-box {
+    padding-top: 3.4rem;
+    padding-bottom: 3.4rem;
+  }
+
+  .cta-text {
+    margin-bottom: 4rem;
+  }
+
+  .cta-input input {
+    height: 4rem;
+  }
+
+  .cta-input textarea {
+    resize: none;
+  }
+
+  .cta-input input,
+  .cta-input textarea {
+    width: 70%;
+    border: 1px solid var(--grey-light);
+    outline: none;
+    border-radius: 0.6rem;
+    padding: 1rem 1.5rem;
+    font-size: 1.4rem;
+    font-family: inherit;
+  }
+}
+
+@media (max-width: 52em) {
+  html {
+    /* 8px / 16px  */
+    font-size: 50%;
+  }
+}

@@ -1,0 +1,114 @@
+:root {
+  --main-color: #e67e22;
+  --main-color-tint1: #fdf2e9;
+  --main-color-shade1: #cf711f;
+  --main-color-shade7: #45260a;
+  --white: #fff;
+  --grey: #555;
+  --grey-dark: #333;
+}
+
+/* CONTAINER */
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* END OF CONTAINER */
+
+.margin-top--sm {
+  margin-top: 3.2rem;
+}
+
+.margin-top--lg {
+  margin-top: 7rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  text-align: center;
+
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+
+  transition: all 0.3s;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+
+.btn--full:hover,
+.btn--full:active {
+  background-color: var(--main-color-shade1);
+}
+
+.title {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--main-color-shade1);
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+  text-align: center;
+
+  position: relative;
+}
+
+.title::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 18rem;
+  background-color: var(--main-color-shade1);
+  bottom: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 1.6rem;
+  color: var(--grey-dark);
+  font-weight: 600;
+}

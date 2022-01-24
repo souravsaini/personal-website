@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Font family -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Linking External CSS -->
+    <link rel="stylesheet" href="./general.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./queries.css" />
+
+    <!--Typed JS-->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Ion Icons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.4.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>Portfolio | Sourav Saini</title>
+  </head>
+  <body>
+    <!-- Header-->
+    <header class="header">
+      <a href="#" class="logo"> <span>Saini</span> Portfolio </a>
+
+      <nav class="navbar">
+        <ul class="menu">
+          <li><a href="#" class="menu-link">Home</a></li>
+          <li><a href="#" class="menu-link">About Me</a></li>
+          <li><a href="#" class="menu-link">Skills</a></li>
+          <li><a href="#" class="menu-link">Projects</a></li>
+          <li><a href="#" class="menu-link">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <main>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <div class="hero-text1">Hello, my name is</div>
+            <div class="hero-text2">Sourav Saini</div>
+            <div class="hero-text3">And I'm a <span class="typed"></span></div>
+            <a
+              href="https://github.com/souravsaini?tab=repositories"
+              target="_blank"
+              class="btn btn--full margin-top--sm"
+              >Browse my Github</a
+            >
+          </div>
+          <div class="hero-img-box">
+            <img
+              src="./images/hero.jpg"
+              alt="My portfolio hero image"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-skills">
+        <div class="container">
+          <span class="title">My Skills</span>
+        </div>
+
+        <div class="container grid grid--2-cols margin-top--lg">
+          <div class="skills-icon-box grid grid--3-cols">
+            <img
+              class="skills-icon"
+              src="https://img.icons8.com/color/96/000000/amazon-web-services.png"
+            />
+            <img
+              class="skills-icon"
+              src="https://img.icons8.com/color/96/000000/terraform.png"
+            />
+            <img
+              class="skills-icon"
+              src="https://img.icons8.com/color/96/000000/git.png"
+            />
+            <img
+              class="skills-icon"
+              src="https://img.icons8.com/color/96/000000/python--v1.png"
+            />
+            <img
+              class="skills-icon"
+              src="https://img.icons8.com/color/96/000000/html-5--v1.png"
+            />
+            <img
+              class="skills-icon"
+              src="https://img.icons8.com/color/96/000000/css3.png"
+            />
+          </div>
+
+          <div class="skills-bars-box">
+            <div class="bars">
+              <div class="info">
+                <span>AWS</span>
+                <span>90%</span>
+              </div>
+              <div class="line aws"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Terraform</span>
+                <span>90%</span>
+              </div>
+              <div class="line terraform"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Git</span>
+                <span>80%</span>
+              </div>
+              <div class="line git"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>Python</span>
+                <span>80%</span>
+              </div>
+              <div class="line python"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>HTML5</span>
+                <span>80%</span>
+              </div>
+              <div class="line html"></div>
+            </div>
+            <div class="bars">
+              <div class="info">
+                <span>CSS3</span>
+                <span>70%</span>
+              </div>
+              <div class="line css"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-projects">
+        <div class="container">
+          <span class="title">My Projects</span>
+        </div>
+
+        <div class="container grid grid--2-cols margin-top--lg">
+          <div class="project">
+            <div class="project-tags">
+              <span class="tag">Open Source</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Terraform</span>
+            </div>
+            <p class="project-title">Bacula Backup Tool</p>
+            <ul class="project-points">
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Ability to manage backups on Data Center nodes.</span>
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Rolled out to production within 3 weeks.</span>
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>One click infrastructure provisioning.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-tags">
+              <span class="tag">Python</span>
+              <span class="tag">AWS Lambda</span>
+              <span class="tag">DynamoDB</span>
+              <span class="tag">Terraform</span>
+            </div>
+            <p class="project-title">Instance Scheduler</p>
+            <ul class="project-points">
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span
+                  >Ability to start/stop AWS instances based on schedules.</span
+                >
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Saving more than $1M per month.</span>
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span
+                  >Incorporates business complexities, logging,
+                  monitoring.</span
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-tags">
+              <span class="tag">AWS EKS</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Git</span>
+            </div>
+            <p class="project-title">SpotInst EKS Integration</p>
+            <ul class="project-points">
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Provisioned SpotInst managed EKS clusters.</span>
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Ability to launch spot instances for EKS.</span>
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Used across multiple product line.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <div class="project-tags">
+              <span class="tag">Jenkins</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Docker</span>
+            </div>
+            <p class="project-title">Jenkins pipeline to Run Terraform</p>
+            <ul class="project-points">
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Created Pipeline to provision infrastructure.</span>
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Used containerised environment.</span>
+              </li>
+              <li class="project-point">
+                <ion-icon
+                  class="project-icon"
+                  name="checkmark-outline"
+                ></ion-icon>
+                <span>Used across multiple projects.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="container">
+          <span class="title">Contact Me</span>
+        </div>
+
+        <div class="container margin-top--lg">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Get in touch with me!</h2>
+              <p class="cta-text">
+                I respond to the emails as soon as possible.
+              </p>
+
+              <form class="cta-form" action="#">
+                <div class="cta-input">
+                  <input type="text" placeholder="Name" required />
+                </div>
+                <div class="cta-input">
+                  <input type="email" placeholder="email" required />
+                </div>
+                <div class="cta-input">
+                  <textarea
+                    cols="30"
+                    rows="10"
+                    placeholder="Describe your project..."
+                    required
+                  ></textarea>
+                </div>
+                <div class="cta-btn">
+                  <button type="submit">Send message</button>
+                </div>
+              </form>
+            </div>
+            <div class="cta-img-box"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="#" class="logo"> <span>Saini</span> Portfolio </a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#"
+              ><ion-icon class="social-icon" name="logo-linkedin"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#"
+              ><ion-icon class="social-icon" name="logo-github"></ion-icon
+            ></a>
+          </li>
+          <li>
+            <a class="footer-link" href="#"
+              ><ion-icon class="social-icon" name="logo-twitter"></ion-icon
+            ></a>
+          </li>
+        </ul>
+
+        <p class="footer-quote">Let's connect and work together...</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
