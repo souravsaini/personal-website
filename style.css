@@ -22,6 +22,7 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* This is the browser font-size settings. Now 1rem = 10px */
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -29,6 +30,7 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--grey);
+  overflow-x: hidden;
 }
 
 /* ###### HEADER ###### */
@@ -38,6 +40,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-color-tint1);
+  position: relative;
 
   height: 9.6rem;
   padding: 0 4.8rem;
@@ -74,6 +77,25 @@ body {
 .menu-link:hover,
 .menu-link:active {
   color: #cf711f;
+}
+
+/* MOBILE VIEW DEFAULTS */
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: var(--grey-dark);
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
 }
 
 /* ###### END OF HEADER ###### */

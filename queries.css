@@ -65,4 +65,143 @@
     /* 8px / 16px  */
     font-size: 50%;
   }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 0 8rem;
+    gap: 6.4rem;
+  }
+
+  .hero-text-box,
+  .hero-img-box {
+    text-align: center;
+  }
+
+  .hero-img {
+    width: 60%;
+  }
+
+  .section-skills-sm {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-icon-box {
+    justify-items: center;
+  }
+
+  .skills-bars-box {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .grid {
+    column-gap: 4.4rem;
+    row-gap: 5rem;
+  }
+
+  .section-projects-sm {
+    grid-template-columns: 1fr;
+  }
+
+  .project-tags {
+    gap: 2.4rem;
+  }
+
+  .heading-secondary {
+    text-align: center;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text {
+    text-align: center;
+  }
+
+  .cta-form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .cta-input input,
+  .cta-input textarea,
+  .cta-btn button {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .navbar {
+    background-color: rgba(255, 255, 255, 0.97);
+    position: absolute; /* by default, all elements are relative to the body */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .navbar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .menu-link:link,
+  .menu-link:visited {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 52em) {
+  .cta-form {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .cta-input input,
+  .cta-input textarea,
+  .cta-btn button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 52em) {
+  html {
+    /* 6px / 16px  */
+    font-size: 37.5%;
+  }
 }
