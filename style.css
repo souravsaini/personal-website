@@ -16,6 +16,7 @@
   --grey: #555;
   --grey-dark: #333;
   --grey-light: #bbb;
+  --grey-light-medium: #999;
 }
 
 html {
@@ -279,6 +280,56 @@ body {
   color: var(--main-color);
 }
 /* ###### END OF PROJECTS SECTION ###### */
+
+/* ###### WORK & AWARDS SECTION ###### */
+.section-work-awards {
+  padding: 9.6rem 0;
+}
+
+.work-awards-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.work-awards {
+  position: relative;
+  border-left: 3px solid var(--main-color-contrast1);
+  font-size: 3rem;
+}
+
+.work-awards-icon {
+  position: absolute;
+  color: var(--main-color-contrast1);
+  left: -1.7rem;
+  top: 2px;
+}
+
+.work-awards-heading {
+  font-size: 2.4rem;
+  margin-left: 3rem;
+  margin-bottom: 2.4rem;
+}
+
+.work-awards-p-1 {
+  font-style: italic;
+  font-size: 2rem;
+  margin-left: 3rem;
+  margin-bottom: 2.4rem;
+  line-height: 1.5;
+}
+
+.work-awards-p-2 {
+  font-size: 1.6rem;
+  margin-left: 3rem;
+  margin-bottom: 10rem;
+  color: var(--grey-light-medium);
+}
+
+.margin-bottom--none {
+  margin-bottom: 0;
+}
+
+/* ###### END OF WORK & AWARDS SECTION ###### */
 
 /* ###### CTA SECTION ###### */
 .section-cta {
