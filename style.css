@@ -485,8 +485,8 @@ body {
 }
 
 .social-icon {
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
   color: var(--main-color-shade1);
   transition: all 0.3s ease;
 }
