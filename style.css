@@ -190,12 +190,64 @@ body {
   background-color: var(--main-color-shade1);
 }
 
-.aws::before,
-.terraform::before {
-  width: 90%;
+/* Skills Animation */
+.animate-aws::before {
+  animation: animate-width-90 2s forwards;
 }
 
-.python::before,
+.animate-terraform::before {
+  animation: animate-width-90 2s forwards;
+}
+
+.animate-python::before {
+  animation: animate-width-80 2s forwards;
+}
+
+.animate-git::before {
+  animation: animate-width-80 2s forwards;
+}
+
+.animate-html::before {
+  animation: animate-width-80 2s forwards;
+}
+
+.animate-css::before {
+  animation: animate-width-70 2s forwards;
+}
+
+@keyframes animate-width-90 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes animate-width-80 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+@keyframes animate-width-70 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+/* .aws::before,
+.terraform::before {
+  width: 90%;
+} */
+
+/* .python::before,
 .git::before,
 .html::before {
   width: 80%;
@@ -203,7 +255,7 @@ body {
 
 .css::before {
   width: 70%;
-}
+} */
 
 .skills-icon {
   background-color: var(--white);
@@ -362,7 +414,7 @@ body {
       rgba(235, 151, 78, 0.35),
       rgba(230, 125, 34, 0.35)
     ),
-    url("./images/contact.jpg");
+    url("./images/hello.jpg");
   background-size: cover;
   background-position: center;
 }
