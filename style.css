@@ -12,11 +12,13 @@
   --main-color-shade1: #cf711f;
   --main-color-shade7: #45260a;
   --main-color-contrast1: #e63022;
+  --main-color-contrast2: #e65722;
   --white: #fff;
   --grey: #555;
   --grey-dark: #333;
   --grey-light: #bbb;
   --grey-light-medium: #999;
+  --input-success: #00a300;
 }
 
 html {
@@ -442,6 +444,21 @@ body {
   padding: 1rem 1.5rem;
   font-size: 1.8rem;
   font-family: inherit;
+}
+
+.cta-input input:valid,
+.cta-input textarea:valid {
+  background: url("./images/check.jpg");
+  background-color: var(--white);
+  background-size: 2rem;
+  background-repeat: no-repeat;
+  background-position: right;
+  outline: 3px solid var(--input-success);
+}
+
+.cta-input input:invalid:not(:focus):not(:placeholder-shown),
+.cta-input textarea:invalid:not(:focus):not(:placeholder-shown) {
+  background-color: var(--main-color-contrast2);
 }
 
 .cta-btn button {
