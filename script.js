@@ -14,7 +14,7 @@ btnNavElement.addEventListener("click", function () {
 
 //smooth scroll
 const links = document.querySelectorAll(".menu-link, .logo");
-console.log(links);
+
 links.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault();
@@ -54,7 +54,7 @@ window.addEventListener("scroll", () => {
   let top = window.pageYOffset + window.innerHeight;
   let isVisible;
 
-  //animation depends upon the sceen width
+  //animation depends upon the screen width
   if (screen.width > 832) {
     isVisible = top > skillSection.offsetTop + 200;
   } else {
@@ -70,3 +70,27 @@ window.addEventListener("scroll", () => {
     cssSkill.classList.add("animate-css");
   }
 });
+
+/* Sticky Navigation */
+const heroElement = document.querySelector(".section-hero");
+
+const obs = new IntersectionObserver(
+  (entries) => {
+    const ent = entries[0];
+
+    if (ent.isIntersecting === false) {
+      document.body.classList.add("sticky");
+    }
+
+    if (ent.isIntersecting === true) {
+      document.body.classList.remove("sticky");
+    }
+  },
+  {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px",
+  }
+);
+obs.observe(heroElement);
